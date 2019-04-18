@@ -1,0 +1,15 @@
+<div class="user-list" *ngIf="usersList.length; else loading">
+  <div *ngFor="let user of usersList">
+    <app-user-card [user]="user" (clicked)="onClickCardHandler($event)"></app-user-card>
+  </div>
+</div>
+<ng-template #loading>Data is loading...Please wait.</ng-template>
+
+<app-pagination [page]="page"
+                [totalPages]="totalPages"
+                [total]="total"
+                [isLoading]="isLoading"
+                (goToPage)="nextPageHandler($event)">
+</app-pagination>
+
+

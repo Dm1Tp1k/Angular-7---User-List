@@ -1,0 +1,11 @@
+.user-list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+app-pagination {
+  float: right;
+  margin-top: 50px;
+  margin-right: 10%;
+}

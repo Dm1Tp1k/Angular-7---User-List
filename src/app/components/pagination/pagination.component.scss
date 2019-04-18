@@ -1,0 +1,17 @@
+.pagination {
+  .pages {
+    button {
+      margin: 5px;
+      background-color: transparent;
+      outline: none;
+      border: 0;
+      cursor: pointer;
+    }
+    .active {
+      color: #0000FF;
+    }
+    .disabled {
+      color: #A9A9A9;
+    }
+  }
+}

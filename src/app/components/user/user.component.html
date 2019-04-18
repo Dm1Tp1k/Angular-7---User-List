@@ -1,0 +1,11 @@
+<div class="user">
+  <button class="back" (click)="back()">&laquo; Back</button>
+
+  <div *ngIf="user; else loading" class="user-info">
+    <div>First Name: {{user.first_name}}</div>
+    <div>Last Name: {{user.last_name}}</div>
+    <img [src]="user.avatar" width="200px" alt="avatar">
+  </div>
+
+  <ng-template #loading>Data is loading...Please wait.</ng-template>
+</div>

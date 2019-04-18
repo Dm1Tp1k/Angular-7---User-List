@@ -1,0 +1,23 @@
+.card {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  white-space: nowrap;
+  cursor: pointer;
+  .card-content {
+    height: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .card-content {
+    font-size: 16px;
+  }
+}
+
+

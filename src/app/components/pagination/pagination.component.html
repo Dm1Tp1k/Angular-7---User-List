@@ -1,0 +1,9 @@
+<div class="pagination" *ngIf="totalPages > 0">
+  <div class="pages">
+    <button
+            *ngFor="let pageNumber of pages()"
+            (click)="onPage(pageNumber)"
+            [disabled]="isLoading"
+            [ngClass]="{'active': pageNumber === page, 'disabled': isLoading}">{{ pageNumber }}</button>
+  </div>
+</div>
